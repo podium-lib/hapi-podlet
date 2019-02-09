@@ -7,15 +7,25 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test/*.js",
+    "test:coverage": "tap test/*.js --cov",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@podium/utils": "3.0.0"
+    "@podium/utils": "3.1.1"
   },
   "devDependencies": {
-    "@podium/podlet": "3.0.0-beta.4",
-    "hapi": "^18.0.0"
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.1",
+    "tap": "^12.1.1",
+    "@podium/podlet": "3.0.0-beta.5",
+    "hapi": "^18.1.0"
   }
 }
