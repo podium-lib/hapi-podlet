@@ -1,19 +1,34 @@
 {
   "name": "@podium/hapi-podlet",
   "version": "1.0.0",
-  "description": "",
-  "main": "./lib/podlet-plugin.js",
-  "directories": {
-    "lib": "lib"
+  "description": "Hapi plugin for Podium Podlet",
+  "main": "lib/podlet-plugin.js",
+  "license": "MIT",
+  "keywords": [
+    "micro services",
+    "micro frontend",
+    "components",
+    "podium",
+    "hapi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:podium-lib/hapi-podlet.git"
   },
+  "bugs": {
+    "url": "https://github.com/podium-lib/issues"
+  },
+  "homepage": "https://podium-lib.io/",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "tap test/*.js",
     "test:coverage": "tap test/*.js --cov",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "author": "",
-  "license": "MIT",
+  "author": "Trygve Lie",
   "dependencies": {
     "@podium/utils": "3.1.1"
   },
