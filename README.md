@@ -16,6 +16,10 @@ please see the [Podium documentation].
 $ npm install @podium/hapi-podlet
 ```
 
+## Requirements
+
+This module require Hapi v17 or newer.
+
 ## Simple usage
 
 Build a simple podlet server:
