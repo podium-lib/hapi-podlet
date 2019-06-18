@@ -109,24 +109,19 @@ class Server {
 
     listen() {
         return new Promise((resolve, reject) => {
-            setTimeout(async () => {
+            setImmediate(async () => {
                 try {
                     await this.app.start();
                     resolve(this.app.info.uri);
                 } catch (error) {
                     reject(error);
                 }
-            }, 100);
+            });
         });
     }
 
-    close() {
-        return new Promise(resolve => {
-            setTimeout(async () => {
-                await this.app.stop();
-                resolve();
-            }, 100);
-        });
+    async close() {
+        await this.app.stop();
     }
 }
 
