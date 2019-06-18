@@ -2,7 +2,7 @@
 
 const HapiPodlet = require('../');
 const Podlet = require('@podium/podlet');
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 
 const app = Hapi.Server({
     host: 'localhost',
