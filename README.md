@@ -27,7 +27,7 @@ Build a simple podlet server:
 ```js
 const HapiPodlet = require('@podium/hapi-podlet');
 const Podlet = require('@podium/podlet');
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 
 const app = Hapi.Server({
     host: 'localhost',
@@ -80,10 +80,9 @@ app.register({
 
 ## Request params
 
-On each request [@podium/podlet] will run a set of operations, such as
-deserialization of the [@podium/context], on the request. When doing so
-[@podium/podlet] will write parameters to `request.app.podium` which is
-accessible inside a request handelers.
+On each request [@podium/podlet] will run a set of operations on the request and
+create a [incoming] object. The [incoming] object is stored at
+`request.app.podium` which is accessible inside request handelers.
 
 ```js
 app.route({
@@ -100,9 +99,10 @@ app.route({
 
 ## h.podiumSend(fragment)
 
-When in development mode this method will wrap the provided fragment in a
-default HTML document before dispatching. When not in development mode, this
-method will just dispatch the fragment.
+When in [development mode] this method will wrap the provided fragment in a
+default [document template] before dispatching.
+
+When not in [development mode], this method will just dispatch the fragment.
 
 See [development mode] for further information.
 
@@ -128,9 +128,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+
 [development mode]: https://github.com/podium-lib/podlet/blob/master/README.md#development-mode 'Development mode'
-[@podium/context locale parser]: https://github.com/podium-lib/context#locale-1 '@podium/context locale parser'
+[document template]: https://podium-lib.io/docs/api/document 'document template'
 [Podium documentation]: https://podium-lib.io/ 'Podium documentation'
-[@podium/context]: https://github.com/podium-lib/context '@podium/context'
-[@podium/podlet]: https://github.com/podium-lib/podlet '@podium/podlet'
+[incoming]: https://podium-lib.io/docs/api/incoming 'HttpIncoming'
+[@podium/podlet]: https://podium-lib.io/docs/api/podlet '@podium/podlet'
 [hapi]: https://hapijs.com/ 'Hapi'
