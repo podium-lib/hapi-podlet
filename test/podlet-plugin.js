@@ -67,20 +67,20 @@ class Server {
         this.app.route({
             method: 'GET',
             path: podlet.manifest(),
-            handler: (request, h) => JSON.stringify(podlet),
+            handler: () => JSON.stringify(podlet),
         });
 
         // Dummy endpoints for proxying
         this.app.route({
             method: 'GET',
             path: '/public',
-            handler: (request, h) => 'GET proxy target',
+            handler: () => 'GET proxy target',
         });
 
         this.app.route({
             method: 'POST',
             path: '/public',
-            handler: (request, h) => {
+            handler: () => {
                 return 'POST proxy target';
             },
         });
@@ -88,7 +88,7 @@ class Server {
         this.app.route({
             method: 'PUT',
             path: '/public',
-            handler: (request, h) => 'PUT proxy target',
+            handler: () => 'PUT proxy target',
         });
 
         // 404 route
@@ -109,24 +109,19 @@ class Server {
 
     listen() {
         return new Promise((resolve, reject) => {
-            setTimeout(async () => {
+            setImmediate(async () => {
                 try {
                     await this.app.start();
                     resolve(this.app.info.uri);
                 } catch (error) {
                     reject(error);
                 }
-            }, 100);
+            });
         });
     }
 
-    close() {
-        return new Promise(resolve => {
-            setTimeout(async () => {
-                await this.app.stop();
-                resolve();
-            }, 100);
-        });
+    async close() {
+        await this.app.stop();
     }
 }
 
@@ -177,7 +172,6 @@ const request = (
     });
 };
 
-
 /**
  * Constructor
  */
@@ -193,7 +187,6 @@ tap.test(
         t.end();
     },
 );
-
 
 /**
  * Generic tests
