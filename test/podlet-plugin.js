@@ -2,10 +2,9 @@
 
 'use strict';
 
-const { URL } = require('url');
+const { request } = require('@podium/test-utils');
 const Podlet = require('@podium/podlet');
 const Hapi = require('@hapi/hapi');
-const http = require('http');
 const tap = require('tap');
 
 const HapiPodlet = require('../');
@@ -124,53 +123,6 @@ class Server {
         await this.app.stop();
     }
 }
-
-const request = (
-    { pathname = '/', address = '', headers = {}, method = 'GET' } = {},
-    payload,
-) => {
-    return new Promise((resolve, reject) => {
-        const url = new URL(pathname, address);
-
-        if (method === 'POST' || method === 'PUT' || method === 'DELETE') {
-            headers = Object.assign(headers, {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'Content-Length': Buffer.byteLength(payload),
-            });
-        }
-
-        const options = {
-            hostname: url.hostname,
-            port: url.port,
-            path: url.pathname,
-            headers,
-            method,
-        };
-
-        const req = http
-            .request(options, res => {
-                const chunks = [];
-                res.on('data', chunk => {
-                    chunks.push(chunk);
-                });
-                res.on('end', () => {
-                    resolve({
-                        headers: res.headers,
-                        body: chunks.join(''),
-                    });
-                });
-            })
-            .on('error', error => {
-                reject(error);
-            });
-
-        if (method === 'POST' || method === 'PUT' || method === 'DELETE') {
-            req.write(payload);
-        }
-
-        req.end();
-    });
-};
 
 /**
  * Constructor
