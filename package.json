@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@hapi/hapi": "^18.1.0",
-    "@podium/podlet": "4.2.1",
+    "@podium/podlet": "4.2.2",
     "@podium/test-utils": "2.0.0",
     "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^14.0.0",
