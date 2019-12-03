@@ -16,17 +16,13 @@ class Server {
             port: 0,
         });
 
-        const podlet = new Podlet(
-            Object.assign(
-                {
-                    pathname: '/',
-                    fallback: '/fallback',
-                    version: '2.0.0',
-                    name: 'podletContent',
-                },
-                options,
-            ),
-        );
+        const podlet = new Podlet({
+            pathname: '/',
+            fallback: '/fallback',
+            version: '2.0.0',
+            name: 'podletContent',
+            ...options,
+        });
 
         podlet.view((incoming, fragment) => {
             return `## ${fragment} ##`;
@@ -44,11 +40,11 @@ class Server {
         this.app.route({
             method: 'GET',
             path: podlet.content(),
-            handler: (request, h) => {
-                if (request.app.podium.context.locale === 'nb-NO') {
+            handler: (req, h) => {
+                if (req.app.podium.context.locale === 'nb-NO') {
                     return h.podiumSend('nb-NO');
                 }
-                if (request.app.podium.context.locale === 'en-NZ') {
+                if (req.app.podium.context.locale === 'en-NZ') {
                     return h.podiumSend('en-NZ');
                 }
                 return h.podiumSend('en-US');
@@ -58,7 +54,7 @@ class Server {
         this.app.route({
             method: 'GET',
             path: podlet.fallback(),
-            handler: (request, h) => {
+            handler: (req, h) => {
                 return h.podiumSend('fallback');
             },
         });
@@ -94,7 +90,7 @@ class Server {
         this.app.route({
             method: '*',
             path: '/{any*}',
-            handler: (request, h) => {
+            handler: (req, h) => {
                 const response = h.response('Not found');
                 response.code(404);
                 response.header('Content-Type', 'text/plain');
