@@ -2,10 +2,9 @@
 
 Hapi plugin for @podium/podlet.
 
-[![Dependencies](https://img.shields.io/david/podium-lib/hapi-podlet.svg?style=flat-square)](https://david-dm.org/podium-lib/hapi-podlet)
-[![Build Status](https://travis-ci.org/podium-lib/hapi-podlet.svg?branch=master&style=flat-square)](https://travis-ci.org/podium-lib/hapi-podlet)
-[![Greenkeeper badge](https://badges.greenkeeper.io/podium-lib/hapi-podlet.svg?style=flat-square)](https://greenkeeper.io/)
-[![Known Vulnerabilities](https://snyk.io/test/github/podium-lib/hapi-podlet/badge.svg?style=flat-square)](https://snyk.io/test/github/podium-lib/hapi-podlet)
+[![Dependencies](https://img.shields.io/david/podium-lib/hapi-podlet.svg)](https://david-dm.org/podium-lib/hapi-podlet)
+[![GitHub Actions status](https://github.com/podium-lib/hapi-podlet/workflows/Run%20Lint%20and%20Tests/badge.svg)](https://github.com/podium-lib/hapi-podlet/actions?query=workflow%3A%22Run+Lint+and+Tests%22)
+[![Known Vulnerabilities](https://snyk.io/test/github/podium-lib/hapi-podlet/badge.svg)](https://snyk.io/test/github/podium-lib/hapi-podlet)
 
 Module for building [@podium/podlet] servers with [hapi]. For writing podlets,
 please see the [Podium documentation].
@@ -18,7 +17,8 @@ $ npm install @podium/hapi-podlet
 
 ## Requirements
 
-This module require Hapi v17 or newer.
+The v3.x of this module require Hapi v19 or newer and node v12 or newer. Please
+use v2.x of this module for Hapi v18 or older.
 
 ## Simple usage
 
