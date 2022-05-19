@@ -1,13 +1,13 @@
 /* eslint-disable no-param-reassign */
 
-'use strict';
+
 
 const { request } = require('@podium/test-utils');
 const Podlet = require('@podium/podlet');
 const Hapi = require('@hapi/hapi');
 const tap = require('tap');
 
-const HapiPodlet = require('../');
+const HapiPodlet = require("..");
 
 class Server {
     constructor(options = {}) {
@@ -24,9 +24,7 @@ class Server {
             ...options,
         });
 
-        podlet.view((incoming, fragment) => {
-            return `## ${fragment} ##`;
-        });
+        podlet.view((incoming, fragment) => `## ${fragment} ##`);
 
         podlet.defaults({
             locale: 'nb-NO',
@@ -54,9 +52,7 @@ class Server {
         this.app.route({
             method: 'GET',
             path: podlet.fallback(),
-            handler: (req, h) => {
-                return h.podiumSend('fallback');
-            },
+            handler: (req, h) => h.podiumSend('fallback'),
         });
 
         this.app.route({
@@ -75,9 +71,7 @@ class Server {
         this.app.route({
             method: 'POST',
             path: '/public',
-            handler: () => {
-                return 'POST proxy target';
-            },
+            handler: () => 'POST proxy target',
         });
 
         this.app.route({
