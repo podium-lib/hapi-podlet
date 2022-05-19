@@ -20,11 +20,15 @@
   },
   "homepage": "https://podium-lib.io/",
   "files": [
+    "package.json",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE",
     "lib"
   ],
   "scripts": {
-    "test": "tap test/*.js",
-    "test:coverage": "tap test/*.js --cov",
+    "test": "tap --no-coverage",
+    "test:coverage": "tap",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -34,14 +38,15 @@
   },
   "devDependencies": {
     "@hapi/hapi": "20.2.2",
-    "@podium/podlet": "4.4.63",
-    "@podium/test-utils": "2.4.1",
-    "eslint": "7.2.0",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-config-prettier": "6.10.0",
-    "eslint-plugin-import": "2.20.1",
-    "eslint-plugin-prettier": "3.1.2",
-    "prettier": "1.19.1",
-    "tap": "14.11.0"
+    "@podium/podlet": "4.4.64",
+    "@podium/test-utils": "2.5.2",
+    "eslint": "8.15.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.6.2",
+    "tap": "16.2.0",
+    "@babel/eslint-parser": "7.17.0"
   }
 }
