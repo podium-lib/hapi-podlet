@@ -27,8 +27,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "tap test/*.js",
-    "test:coverage": "tap test/*.js --cov",
+    "test": "tap --no-coverage",
+    "test:coverage": "tap",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
