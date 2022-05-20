@@ -1,6 +1,6 @@
 {
   "name": "@podium/hapi-podlet",
-  "version": "3.0.1",
+  "version": "4.0.0-next.1",
   "type": "module",
   "description": "Hapi plugin for Podium Podlet",
   "main": "lib/podlet-plugin.js",
