@@ -1,6 +1,6 @@
 {
   "name": "@podium/hapi-podlet",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Hapi plugin for Podium Podlet",
   "main": "lib/podlet-plugin.js",
   "license": "MIT",
