@@ -1,13 +1,10 @@
 /* eslint-disable no-param-reassign */
+import { request } from '@podium/test-utils';
+import Podlet from '@podium/podlet';
+import Hapi from '@hapi/hapi';
+import tap from 'tap';
 
-
-
-const { request } = require('@podium/test-utils');
-const Podlet = require('@podium/podlet');
-const Hapi = require('@hapi/hapi');
-const tap = require('tap');
-
-const HapiPodlet = require("..");
+import HapiPodlet from '../lib/podlet-plugin.js';
 
 class Server {
     constructor(options = {}) {
