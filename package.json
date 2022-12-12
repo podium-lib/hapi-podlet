@@ -34,7 +34,7 @@
   },
   "author": "Trygve Lie",
   "dependencies": {
-    "@podium/utils": "4.4.37"
+    "@podium/utils": "4.4.38"
   },
   "devDependencies": {
     "@hapi/hapi": "20.2.2",
