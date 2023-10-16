@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/podium-lib/hapi-podlet/compare/v3.0.4...v3.0.5) (2023-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @podium/utils to v4.4.40 ([21d1eab](https://github.com/podium-lib/hapi-podlet/commit/21d1eab9d4165061b4f515c341e82d993630e51f))
+
 ## [3.0.4](https://github.com/podium-lib/hapi-podlet/compare/v3.0.3...v3.0.4) (2023-01-09)
 
 
