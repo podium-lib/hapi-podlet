@@ -27,7 +27,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "tap",
+    "test": "tap --disable-coverage --allow-empty-coverage",
     "test:coverage": "tap",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
