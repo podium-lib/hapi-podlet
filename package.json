@@ -27,7 +27,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "tap --no-coverage",
+    "test": "tap --disable-coverage --allow-empty-coverage",
     "test:coverage": "tap",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -38,18 +38,18 @@
   },
   "devDependencies": {
     "@hapi/hapi": "21.3.2",
-    "@podium/podlet": "4.4.74",
+    "@podium/podlet": "4.5.0",
     "@podium/test-utils": "2.5.2",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "eslint": "8.52.0",
+    "eslint": "8.54.0",
     "eslint-config-airbnb-base": "15.0.0",
-    "eslint-config-prettier": "8.10.0",
+    "eslint-config-prettier": "9.0.0",
     "eslint-plugin-import": "2.29.0",
-    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-prettier": "5.0.1",
     "semantic-release": "22.0.8",
-    "prettier": "2.8.8",
-    "tap": "16.3.9",
+    "prettier": "3.1.0",
+    "tap": "18.6.1",
     "@babel/eslint-parser": "7.22.15"
   }
 }
