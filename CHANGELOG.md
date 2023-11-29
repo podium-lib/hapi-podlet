@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/podium-lib/hapi-podlet/compare/v3.0.7...v4.0.0) (2023-11-29)
+
+
+### Features
+
+* Convert to esm ([00625fa](https://github.com/podium-lib/hapi-podlet/commit/00625facaf1ac51667c0bd9eb421364d7ca5f38f))
+
+
+### BREAKING CHANGES
+
+* Convert module to ESM only
+
 # [4.0.0-next.2](https://github.com/podium-lib/hapi-podlet/compare/v4.0.0-next.1...v4.0.0-next.2) (2023-11-27)
 
 
