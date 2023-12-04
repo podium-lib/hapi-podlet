@@ -25,9 +25,9 @@ use v2.x of this module for Hapi v18 or older.
 Build a simple podlet server:
 
 ```js
-const HapiPodlet = require('@podium/hapi-podlet');
-const Podlet = require('@podium/podlet');
-const Hapi = require('@hapi/hapi');
+import HapiPodlet from '@podium/hapi-podlet';
+import Podlet from '@podium/podlet';
+import Hapi from '@hapi/hapi';
 
 const app = Hapi.Server({
     host: 'localhost',
