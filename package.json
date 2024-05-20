@@ -35,7 +35,7 @@
   },
   "author": "Trygve Lie",
   "dependencies": {
-    "@podium/utils": "5.0.5"
+    "@podium/utils": "5.0.7"
   },
   "devDependencies": {
     "@podium/podlet": "5.0.5",
