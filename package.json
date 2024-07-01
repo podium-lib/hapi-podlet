@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@podium/podlet": "5.0.5",
-    "@hapi/hapi": "21.3.9",
+    "@hapi/hapi": "21.3.10",
     "@podium/test-utils": "2.5.2",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
