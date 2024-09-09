@@ -1,3 +1,10 @@
+## [4.0.6](https://github.com/podium-lib/hapi-podlet/compare/v4.0.5...v4.0.6) (2024-09-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @podium/utils to v5.2.0 ([c5032ce](https://github.com/podium-lib/hapi-podlet/commit/c5032ce2934285eff024a9e1ce6b44316cbb627b))
+
 ## [4.0.5](https://github.com/podium-lib/hapi-podlet/compare/v4.0.4...v4.0.5) (2024-08-19)
 
 
