@@ -129,7 +129,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-[development mode]: https://github.com/podium-lib/podlet/blob/master/README.md#development-mode 'Development mode'
+[development mode]: https://github.com/podium-lib/podlet/blob/main/README.md#development-mode 'Development mode'
 [document template]: https://podium-lib.io/docs/api/document 'document template'
 [Podium documentation]: https://podium-lib.io/ 'Podium documentation'
 [incoming]: https://podium-lib.io/docs/api/incoming 'HttpIncoming'
