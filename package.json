@@ -1,52 +1,51 @@
 {
-  "name": "@podium/hapi-podlet",
-  "version": "4.0.7",
-  "type": "module",
-  "description": "Hapi plugin for Podium Podlet",
-  "main": "lib/podlet-plugin.js",
-  "license": "MIT",
-  "keywords": [
-    "micro services",
-    "micro frontend",
-    "components",
-    "podium",
-    "hapi"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:podium-lib/hapi-podlet.git"
-  },
-  "bugs": {
-    "url": "https://github.com/podium-lib/issues"
-  },
-  "homepage": "https://podium-lib.io/",
-  "files": [
-    "package.json",
-    "CHANGELOG.md",
-    "README.md",
-    "LICENSE",
-    "lib"
-  ],
-  "scripts": {
-    "test": "tap --disable-coverage --allow-empty-coverage",
-    "test:coverage": "tap",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
-  "author": "Trygve Lie",
-  "dependencies": {
-    "@podium/utils": "5.3.1"
-  },
-  "devDependencies": {
-    "@hapi/hapi": "21.3.10",
-    "@podium/eslint-config": "1.0.0",
-    "@podium/podlet": "5.1.12",
-    "@podium/test-utils": "2.5.2",
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/git": "10.0.1",
-    "eslint": "9.11.1",
-    "prettier": "3.3.3",
-    "semantic-release": "22.0.12",
-    "tap": "18.8.0"
-  }
+    "name": "@podium/hapi-podlet",
+    "version": "4.0.7",
+    "type": "module",
+    "description": "Hapi plugin for Podium Podlet",
+    "main": "lib/podlet-plugin.js",
+    "license": "MIT",
+    "keywords": [
+        "micro services",
+        "micro frontend",
+        "components",
+        "podium",
+        "hapi"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:podium-lib/hapi-podlet.git"
+    },
+    "bugs": {
+        "url": "https://github.com/podium-lib/issues"
+    },
+    "homepage": "https://podium-lib.io/",
+    "files": [
+        "package.json",
+        "CHANGELOG.md",
+        "README.md",
+        "LICENSE",
+        "lib"
+    ],
+    "scripts": {
+        "test": "tap --disable-coverage --allow-empty-coverage",
+        "test:coverage": "tap",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "author": "Trygve Lie",
+    "dependencies": {
+        "@podium/utils": "5.3.1"
+    },
+    "devDependencies": {
+        "@hapi/hapi": "21.3.10",
+        "@podium/eslint-config": "1.0.0",
+        "@podium/podlet": "5.1.12",
+        "@podium/semantic-release-config": "2.0.0",
+        "@podium/test-utils": "2.5.2",
+        "eslint": "9.11.1",
+        "prettier": "3.3.3",
+        "semantic-release": "24.1.1",
+        "tap": "18.8.0"
+    }
 }
