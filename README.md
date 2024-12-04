@@ -4,7 +4,6 @@ Hapi plugin for @podium/podlet.
 
 [![Dependencies](https://img.shields.io/david/podium-lib/hapi-podlet.svg)](https://david-dm.org/podium-lib/hapi-podlet)
 [![GitHub Actions status](https://github.com/podium-lib/hapi-podlet/workflows/Run%20Lint%20and%20Tests/badge.svg)](https://github.com/podium-lib/hapi-podlet/actions?query=workflow%3A%22Run+Lint+and+Tests%22)
-[![Known Vulnerabilities](https://snyk.io/test/github/podium-lib/hapi-podlet/badge.svg)](https://snyk.io/test/github/podium-lib/hapi-podlet)
 
 Module for building [@podium/podlet] servers with [hapi]. For writing podlets,
 please see the [Podium documentation].
@@ -127,7 +126,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
 
 [development mode]: https://github.com/podium-lib/podlet/blob/main/README.md#development-mode 'Development mode'
 [document template]: https://podium-lib.io/docs/api/document 'document template'
