@@ -2,7 +2,6 @@
 
 Hapi plugin for @podium/podlet.
 
-[![Dependencies](https://img.shields.io/david/podium-lib/hapi-podlet.svg)](https://david-dm.org/podium-lib/hapi-podlet)
 [![GitHub Actions status](https://github.com/podium-lib/hapi-podlet/workflows/Run%20Lint%20and%20Tests/badge.svg)](https://github.com/podium-lib/hapi-podlet/actions?query=workflow%3A%22Run+Lint+and+Tests%22)
 
 Module for building [@podium/podlet] servers with [hapi]. For writing podlets,
