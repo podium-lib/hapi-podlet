@@ -40,7 +40,7 @@
     "devDependencies": {
         "@hapi/hapi": "21.3.10",
         "@podium/eslint-config": "1.0.0",
-        "@podium/podlet": "5.1.12",
+        "@podium/podlet": "5.2.4",
         "@podium/semantic-release-config": "2.0.0",
         "@podium/test-utils": "2.5.2",
         "eslint": "9.11.1",
