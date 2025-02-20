@@ -46,6 +46,6 @@
         "eslint": "9.11.1",
         "prettier": "3.3.3",
         "semantic-release": "24.1.1",
-        "tap": "18.8.0"
+        "tap": "21.1.0"
     }
 }
