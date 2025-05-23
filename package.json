@@ -45,7 +45,7 @@
         "@podium/test-utils": "2.5.2",
         "eslint": "9.11.1",
         "prettier": "3.3.3",
-        "semantic-release": "24.1.1",
+        "semantic-release": "24.2.5",
         "tap": "18.8.0"
     }
 }
