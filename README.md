@@ -1,3 +1,7 @@
+>
+> ⚠️ This project is deprecated and no longer maintained by the project.
+>
+
 # @podium/hapi-podlet
 
 Hapi plugin for @podium/podlet.
